@@ -1,0 +1,6 @@
+[submodule "apps-gorm"]
+	path = apps-gorm
+	url = https://github.com/gnustep/apps-gorm
+[submodule "apps-projectcenter"]
+	path = apps-projectcenter
+	url = https://github.com/gnustep/apps-projectcenter
