@@ -46,12 +46,12 @@ jobs:
       - name: Build system on Debian 12 AMD64
         run: |
           unzip system_amd64.zip
-          tar -xf /__w/system/system/system-amd64.tar.gz -C /
+          tar -xf /__w/developer/developer/system-amd64.tar.gz -C /
           ./build.sh
-          cd /__w/system/system/ && tar -zcvf developer-amd64.tar.gz /Developer /Library /System 
+          cd /__w/developer/developer/ && tar -zcvf developer-amd64.tar.gz /Developer /Library /System 
         continue-on-error: false
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: gershwin-system-amd64-main
-          path: /__w/system/system/developer-amd64.tar.gz
+          path: /__w/developer/developer/developer-amd64.tar.gz
