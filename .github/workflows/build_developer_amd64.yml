@@ -45,7 +45,7 @@ jobs:
         shell: bash
       - name: Build system on Debian 12 AMD64
         run: |
-          unzip root_amd64.zip
+          unzip system_amd64.zip
           tar -xf /__w/system/system/system-amd64.tar.gz -C /
           ./build.sh
           cd /__w/system/system/ && tar -zcvf developer-amd64.tar.gz /Developer /Library /System 
