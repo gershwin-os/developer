@@ -53,5 +53,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gershwin-system-amd64-main
+          name: gershwin-developer-amd64-main
           path: /__w/developer/developer/developer-amd64.tar.gz
