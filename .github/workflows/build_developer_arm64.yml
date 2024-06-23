@@ -54,7 +54,7 @@ jobs:
           echo "my info: " `uname -a`  
         # Set an output parameter `uname` for use in subsequent steps
         run: |
-          unzip system_amd64.zip
+          unzip system_arm64.zip
           tar -xf /home/runner/work/developer/developer/system-arm64.tar.gz -C /
           ./build.sh
           cd /home/runner/work/developer/developer/ && tar -zcvf developer-arm64.tar.gz /Developer
