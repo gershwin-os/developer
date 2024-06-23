@@ -54,8 +54,10 @@ jobs:
           echo "my info: " `uname -a`  
         # Set an output parameter `uname` for use in subsequent steps
         run: |
+          unzip system_amd64.zip
+          tar -xf /home/runner/work/developer/developer/system-arm64.tar.gz -C /
           ./build.sh
-          cd /home/runner/work/system/system/ && tar -zcvf developer-arm64.tar.gz /Developer
+          cd /home/runner/work/developer/developer/ && tar -zcvf developer-arm64.tar.gz /Developer
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
