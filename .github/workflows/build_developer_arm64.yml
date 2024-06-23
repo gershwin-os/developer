@@ -1,4 +1,4 @@
-name: Build system on Debian 12 ARM64
+name: Build developer on Debian 12 ARM64
 
 on:
   workflow_dispatch:

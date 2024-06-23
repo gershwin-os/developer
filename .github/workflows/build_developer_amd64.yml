@@ -1,4 +1,4 @@
-name: Build system on Debian 12 AMD64
+name: Build developer on Debian 12 AMD64
 
 on:
   push:
